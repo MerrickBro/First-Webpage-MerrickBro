@@ -1,0 +1,206 @@
+/* font-family: NMSFuturaProBook */
+@import url('https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.css');
+/* font-family: NMSGeoSans */
+@import url('https://font.nmscd.com/assets/font/NMSGeoSans_Kerned/Web-TT/NMSGeoSans_Kerned.css');
+
+html {
+    background-color: #00072D;
+    color: #B0E0FF;
+    font-family: 'NMSGeoSans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #B0E0FF;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header {
+    display: flex;
+    border: 3px solid #4A6D7C;
+    border-radius: 10%;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+header div img {
+    width: 50px;
+    height: 50px;
+}
+
+main, #tri-facto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main section {
+    width: 50%;
+}
+
+#intro, #right-column, #facts {
+    text-align: center;
+}
+
+#facts {
+    width: 100%;
+}
+
+#tri-facto div {
+    width: 33.33%;
+    align-items: center;
+    padding: 2px;
+}
+
+hr {
+    color: #df85a2;
+    border: 2px solid #df85a2;
+}
+
+#right-column p {
+    font-size: 25px;
+}
+
+#creditzButton {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: fit-content;
+    width: fit-content;
+
+    border: 2px solid #4A6D7C;
+    border-radius: 10%;
+    font-size: 1rem;
+    background-color: #00000000;
+    color: #B0E0FF;
+
+    display: inline-flex;
+    align-self: flex-end;
+}
+
+#creditz {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #00072dbb;
+    backdrop-filter: blur(10px);
+    border-top: 3px solid #4A6D7C;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#creditzContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 35%;
+    background-color: #00072d;
+    border: 3px solid #4A6D7C;
+    border-radius: 5%;
+    
+}
+
+#creditzContainer hr {
+    width: 100%;
+}
+
+#hideCreditzButton {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+#creditzHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#creditzBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+/* Fish Animation */
+#intro {
+    position: relative;
+    overflow: hidden;
+}
+
+#intro div {
+    height: 1px;
+}
+
+.fish {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    
+    animation: swim 10s ease-in-out infinite;
+}
+
+@keyframes swim {
+    0% {
+        left: 0;
+        transform: translateY(-50%) scaleX(1) rotate(-10deg);
+    }
+
+    45% {
+        transform: translateY(-55%) scaleX(1) rotate(-10deg);
+    }
+
+    50% {
+        left: calc(100% - 100px);
+        transform: translateY(-50%) scaleX(-1) rotate(-10deg);
+    }
+
+    95% {
+        transform: translateY(-55%) scaleX(-1) rotate(-10deg);
+    }
+
+    100% {
+        left: 0;
+        transform: translateY(-50%) scaleX(1) rotate(-10deg);
+    }
+}
+/*END Fish Animation*/
