@@ -50,6 +50,18 @@ header div img {
     height: 50px;
 }
 
+#pageStart {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
 main, #tri-facto {
     display: flex;
     flex-direction: row;
@@ -93,7 +105,7 @@ hr {
     border: 2px solid #4A6D7C;
     border-radius: 10%;
     font-size: 1rem;
-    background-color: #00000000;
+    background-color: #00000077;
     color: #B0E0FF;
 
     display: inline-flex;
@@ -118,9 +130,9 @@ hr {
 #creditzContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 35%;
+    height: 50%;
     width: 35%;
     background-color: #00072d;
     border: 3px solid #4A6D7C;
@@ -152,6 +164,19 @@ hr {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+}
+
+#volume-container, #volumeSlider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#volume-container h2 {
+    width: 30%;
+    text-align: center;
 }
 
 .hidden {
