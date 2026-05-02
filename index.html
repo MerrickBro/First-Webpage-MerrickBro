@@ -20,7 +20,13 @@
             <img src="assets/logo.png">
             <h1>Mer and Axolotl</h1>
         </div>
-
+        <div id="now-playing">
+            <p>Now Playing</p>
+            <p id="currentTitle">--</p>
+            <p>by:</p>
+            <p id="currentArtist">--</p>
+            <button id="nextSong" onclick="playNextTrack()">></button>
+        </div>
         <nav>
             <a href="#intro">Introduction</a>
             <a href="#facts">Facts</a>
@@ -117,15 +123,20 @@
                     <li><a href="https://www.shutterstock.com/image-vector/illustration-axolotl-limb-regeneration-infographic-2410703271?trackingId=a73107f9-95f3-442d-81c6-da9daf232250&listId=searchResults">Fun Fact Image 1</a></li>
                     <li><a href="https://www.pinterest.com/pin/389420699033404634/">Fun Fact Image 2</a></li>
                     <li><a href="https://www.watercritters.ca/tag/socialization/">Fun Fact Image 3</a></li>
-                    <li><a href="https://open.spotify.com/track/3uuxpMX3fAIGbA4i8gJr3L?si=96cf3b79745f4073">Music - Distant Ocean</a></li>
-                    <li><a href="https://open.spotify.com/track/4mZFxyHlldg9ApGAGObdUR?si=6ab9f9fcf30c4ab4">Music - New Look</a></li>
+                    <li><a href="https://open.spotify.com/track/4WbiIxEEihkaklkcQdkQNW?si=1ee3c35847cf41e6">Aquarium's Afternoon - Heartbeat in The Brain</a></li>
+                    <li><a href="https://open.spotify.com/track/3uuxpMX3fAIGbA4i8gJr3L?si=96cf3b79745f4073">Distant Ocean - Alyzea</a></li>
+                    <li><a href="https://open.spotify.com/track/43uQq3GsdGzIrdnxX97upR?si=36db9e6eaabe4569">Last Day to Live - Dreamcorp.</a></li>
+                    <li><a href="https://open.spotify.com/track/4mZFxyHlldg9ApGAGObdUR?si=6ab9f9fcf30c4ab4">New Look - Secret Potion</a></li>
+                    <li><a href="https://open.spotify.com/track/0NPajRRbTvnXppqfEU8qaW?si=6d5a619dd49b4d4a">Overpopulation at The End of Everything is Less of a Worry, Haha - Dreamcorp.</a></li>
+                    <li><a href="https://open.spotify.com/track/3YoVchYjfP122w8IGJXJHg?si=297a4f6ca2b94a3d">Unseen - Squeak</a></li>
+                    <li><a href="https://open.spotify.com/track/1jNZj6WXVhiRsqLNqe43D8?si=e217f7bb1af747d0">Your Life Flashing Before Your Eyes - Dreamcorp.</a></li>
                 </div>
                 
                 <hr>
                 
                 <div id="volume-container">
                     <h2>Music Volume</h2>
-                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.2" oninput="setVolume(this.value)">
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.001" value="0.1" oninput="setVolume(this.value)">
                 </div>
                     
                 <hr>
@@ -141,12 +152,25 @@
     </footer>
     
     <audio id="backgroundMusic1" class="backgroundMusic">
-        <source src="music/Distant_Ocean.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        <source src="music/Aquarium's Afternoon.flac" type="audio/flac">
     </audio>
     <audio id="backgroundMusic2" class="backgroundMusic">
-        <source src="music/New_Look.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+        <source src="music/Distant Ocean.flac" type="audio/flac">
+    </audio>
+    <audio id="backgroundMusic3" class="backgroundMusic">
+        <source src="music/Last Day to Live.flac" type="audio/flac">
+    </audio>
+    <audio id="backgroundMusic4" class="backgroundMusic">
+        <source src="music/New Look.flac" type="audio/flac">
+    </audio>
+    <audio id="backgroundMusic5" class="backgroundMusic">
+        <source src="music/Overpopulation at The End of Everything is Less of a Worry, Haha.flac" type="audio/flac">
+    </audio>
+    <audio id="backgroundMusic6" class="backgroundMusic">
+        <source src="music/Unseen.flac" type="audio/flac">
+    </audio>
+    <audio id="backgroundMusic7" class="backgroundMusic">
+        <source src="music/Your Life Flashing Before Your Eyes.flac" type="audio/flac">
     </audio>
 
     <script rel="javascript" src="script.js"></script>

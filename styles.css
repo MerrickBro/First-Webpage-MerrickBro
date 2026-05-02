@@ -23,19 +23,44 @@ a {
     font-size: 17px;
 }
 
+button {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #4A6D7C;
+    border-radius: 10%;
+    font-size: 1rem;
+    background-color: #00000077;
+    color: #B0E0FF;
+}
+
 header {
     display: flex;
     border: 3px solid #4A6D7C;
     border-radius: 10%;
     justify-content: space-between;
+    align-items: center;
     font-size: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-header div {
+#logo-and-name {
     display: flex;
     flex-direction: row;
+}
+
+#now-playing {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#currentTitle, #currentArtist {
+    color: green;
 }
 
 header nav {
@@ -132,7 +157,7 @@ hr {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 50%;
+    height: fit-content;
     width: 35%;
     background-color: #00072d;
     border: 3px solid #4A6D7C;

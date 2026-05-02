@@ -17,25 +17,40 @@ let enterSite = () => {
 let audioElements = document.querySelectorAll(".backgroundMusic");
 let currentAudioIndex = 0; // This was missing or misplaced!
 
-// Set initial volume for all audio elements
-audioElements.forEach(audio => {
-    audio.volume = 0.1;
-});
-
 // Set initial slider value
 let slider = document.getElementById("volumeSlider");
-if (slider) { slider.value = 0.2; }
+if (slider) { slider.value = 0.1; }
 
 // Volume control function
 let setVolume = (value) => {
     audioElements.forEach(audio => { audio.volume = value/2; });
 }
 
+// Set initial volume
+setVolume(slider.value);
+
+// Function to display current track information
+let displayCurrentTrackInfo = (index) => {
+    const trackInfo = [
+        { title: "Aquarium's Afternoon", artist: "Heartbeat in the brain" },
+        { title: "distant ocean", artist: "alyzea" },
+        { title: "last day to live (make it count)", artist: "dreamcorp." },
+        { title: "New Look (Wii U Wii Maker Lofi Mix)", artist: "Lofi Beats To Chill Study Sleep" },
+        { title: "overpopulation at the end of everything is less of a worry, haha ('a letter to you' from mother 3)", artist: "dreamcorp." },
+        { title: "unseen", artist: "Squeak" },
+        { title: "your life flashing before your eyes", artist: "dreamcorp." }
+    ];
+    const info = trackInfo[index];
+    document.getElementById("currentTitle").textContent = info.title;
+    document.getElementById("currentArtist").textContent = info.artist;
+};
+
 // Function to play a specific track by index
 let playTrack = (index) => {
     audioElements.forEach(audio => { audio.pause(); audio.currentTime = 0; });
     currentAudioIndex = index;
     audioElements[currentAudioIndex].play().catch(e => console.log("Click page to play"));
+    displayCurrentTrackInfo(currentAudioIndex);
 };
 
 // Function to play the next track in the list
