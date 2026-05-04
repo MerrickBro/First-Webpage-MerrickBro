@@ -37,7 +37,7 @@ button {
     color: #B0E0FF;
 }
 
-a, button {
+a, button, input {
     cursor: url(assets/Selector.cur), pointer;
 }
 
