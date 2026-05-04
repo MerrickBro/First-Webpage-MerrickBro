@@ -7,6 +7,7 @@ html {
     background-color: #00072D;
     color: #B0E0FF;
     font-family: 'NMSGeoSans', sans-serif;
+    cursor: url(assets/Cursor.cur), default;
 }
 
 img {
@@ -34,6 +35,10 @@ button {
     font-size: 1rem;
     background-color: #00000077;
     color: #B0E0FF;
+}
+
+a, button {
+    cursor: url(assets/Selector.cur), pointer;
 }
 
 header {
