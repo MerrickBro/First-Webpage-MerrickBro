@@ -23,7 +23,7 @@ if (slider) { slider.value = 0.1; }
 
 // Volume control function
 let setVolume = (value) => {
-    audioElements.forEach(audio => { audio.volume = value/2; });
+    audioElements.forEach(audio => { audio.volume = value / 2; });
 }
 
 // Set initial volume

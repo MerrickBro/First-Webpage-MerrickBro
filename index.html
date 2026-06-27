@@ -1,182 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mer and Axolotl</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<section id="pageStart" onclick="enterSite()">
-    <img src="assets/logo.png">
-    <h1>Click to Enter</h1>
-</section>
-
-<body>
-
-    <header>
-        <div id="logo-and-name">
-            <img src="assets/logo.png">
-            <h1>Mer and Axolotl</h1>
-        </div>
-        <div id="now-playing">
-            <p>Now Playing</p>
-            <p id="currentTitle">--</p>
-            <p>by:</p>
-            <p id="currentArtist">--</p>
-            <button id="nextSong" onclick="playNextTrack()">></button>
-        </div>
-        <nav>
-            <a href="#intro">Introduction</a>
-            <a href="#facts">Facts</a>
-            <a href="https://github.com/MerrickBro">MerrickBro</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="left-column">
-            <hr>
-
-            <div id="intro">
-                <h2>AXOLOTL</h2>
-
-                <div class="fishWrapper">
-                    <img class="fish" src="assets/intro-separator.gif">
-                </div>
-
-                <p>Welcome to Mer and Axolotl! Where the peak is</p>
-
-                <hr>
-
-                <img src="assets/intro.jpg">
-
-                <hr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mer and Axolotl</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/logo/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/logo/favicon-16x16.png"
+        >
+        <link rel="manifest" href="assets/logo/site.webmanifest">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <section id="pageStart" onclick="enterSite()">
+        <img src="assets/logo.png">
+        <h1>Click to Enter</h1>
+    </section>
+    <body>
+        <header>
+            <div id="logo-and-name">
+                <img src="assets/logo.png">
+                <h1>Mer and Axolotl</h1>
             </div>
-
-            <div id="facts">
-                <div id="tri-facto">
-                    <div id="fact1" class="fact">
-                        <img src="assets/fact1.jpg">
-                        <p>If an axolotl loses a limb, it regenerates. These salamanders can grow back not just legs and tails, but also parts of their heart, spine and even brain.</p>
-                    </div>
-
-                    <div id="fact2" class="fact">
-                        <p>Despite their gentle appearance, young axolotls in captivity will sometimes bite off each other’s limbs. Especially in crowded tanks.</p>
-                        <img src="assets/fact2.gif">
-                    </div>
-
-                    <div id="fact3" class="fact">
-                        <img src="assets/fact3.jpg">
-                        <p>When axolotls reach about six months old, they begin to mate and the process involves them moving together in a circular, dance-like fashion.</p>
-                    </div>
-                </div>
+            <div id="now-playing">
+                <p>Now Playing</p>
+                <p id="currentTitle">--</p>
+                <p>by:</p>
+                <p id="currentArtist">--</p>
+                <button id="nextSong" onclick="playNextTrack()">></button>
             </div>
-        </section>
-
-        <section id="right-column">
-            <hr>
-
-            <img src="assets/detailImage.png">
-
-            <hr>
-
-            <h2>Why axolotls?</h2>
-            <p>I have chosen to showcase axolotls because quite frankly, they are flippin' adorable. Fight me.</p>
-
-            <hr>
-            
-            <h2 id="general-facts">General Facts!</h2>
-            <p>The axolotl is carnivorous, consuming small prey such as mollusks, worms, insects, other arthropods, and small fish in the wild. Axolotls locate food by smell, and will "snap" at any potential meal, sucking the food into their stomachs with vacuum force.</p>
-            <p> Unfortunately, axolotls have been driven to near extinction by the introduction of invasive species such as tilapia and carp; with a decreasing population of around 50 to 1,000 adult individuals, the species has been assessed as critically endangered by the International Union for Conservation of Nature!</p>
-            <p>Axolotls have four pigmentation genes; when mutated, they create different color variants. The four most common mutant colors are as follows:</p>
-            <ul>
-                <li>Leucistic: pale pink body, black eyes</li>
-                <li>Xanthic: grey body, black eyes</li>
-                <li>Albinism: pale pink or white body, red eyes</li>
-                <li>Melanism: black or dark blue body with no gold speckling or olive tone</li>
-            </ul>
-        </section>
-
-        <button id="creditzButton" onclick="showCreditz()">Credits / Settings</button>
-
-        <section id="creditz" class="hidden">
-            <div id="creditzContainer">
+            <nav>
+                <a href="#intro">Introduction</a>
+                <a href="#facts">Facts</a>
+                <a href="https://github.com/MerrickBro">MerrickBro</a>
+            </nav>
+        </header>
+        <main>
+            <section id="left-column">
                 <hr>
-
-                <div id="creditzHeader">
-                    <h2>Credits</h2>
-                    <button id="hideCreditzButton" onclick="hideCreditz()">X</button>
-                </div>
-
-                <hr>
-
-                <div id="creditzBody">
-                    <li><a href="https://en.wikipedia.org/wiki/Axolotl">Wikipedia</a></li>
-                    <li><a href="https://www.conservation.org/learning/axolotl-facts">Fun Facts 1 & 2</a></li>
-                    <li><a href="https://www.lovet.com/blog/five-axolotl-fun-facts-about-a-fascinating-aquatic-pet/">Fun Fact 3</a></li>
+                <div id="intro">
+                    <h2>AXOLOTL</h2>
+                    <div class="fishWrapper">
+                        <img class="fish" src="assets/intro-separator.gif">
+                    </div>
+                    <p>Welcome to Mer and Axolotl! Where the peak is</p>
                     <hr>
-                    <li><a href="https://axolotlplanet.com/collections/axolotls">Logo</a></li>
-                    <li><a href="https://www.picmix.com/stamp/axolotl-2583636">Swimming Axolotl</a></li>
-                    <li><a href="https://www.petsupermarket.com/fish/live-fish/assorted-axolotl-regular/PSI00917.html?srsltid=AfmBOorZfaX6iSMbiAIyXP8k-2uWxYpmH58E8Q8pSW1M9-J5qdB7Vnoe">Left Image</a></li>
-                    <li><a href="https://www.pnwbettas.com/blogs/care-guides/axolotl-care-guide">Right Image</a></li>
-                    <li><a href="https://www.shutterstock.com/image-vector/illustration-axolotl-limb-regeneration-infographic-2410703271?trackingId=a73107f9-95f3-442d-81c6-da9daf232250&listId=searchResults">Fun Fact Image 1</a></li>
-                    <li><a href="https://www.pinterest.com/pin/389420699033404634/">Fun Fact Image 2</a></li>
-                    <li><a href="https://www.watercritters.ca/tag/socialization/">Fun Fact Image 3</a></li>
+                    <img src="assets/intro.jpg">
                     <hr>
-                    <li><a href="https://codepen.io/monchito/pen/RPEqvo">Swimming Axolotl Logic (Unmodified)</a></li>
+                </div>
+                <div id="facts">
+                    <div id="tri-facto">
+                        <div id="fact1" class="fact">
+                            <img src="assets/fact1.jpg">
+                            <p>If an axolotl loses a limb, it regenerates. These salamanders can grow back not just legs and tails, but also parts of their heart, spine and even brain.</p>
+                        </div>
+                        <div id="fact2" class="fact">
+                            <p>Despite their gentle appearance, young axolotls in captivity will sometimes bite off each other’s limbs. Especially in crowded tanks.</p>
+                            <img src="assets/fact2.gif">
+                        </div>
+                        <div id="fact3" class="fact">
+                            <img src="assets/fact3.jpg">
+                            <p>When axolotls reach about six months old, they begin to mate and the process involves them moving together in a circular, dance-like fashion.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="right-column">
+                <hr>
+                <img src="assets/detailImage.png">
+                <hr>
+                <h2>Why axolotls?</h2>
+                <p>I have chosen to showcase axolotls because quite frankly, they are flippin' adorable. Fight me.</p>
+                <hr>
+                <h2 id="general-facts">General Facts!</h2>
+                <p>The axolotl is carnivorous, consuming small prey such as mollusks, worms, insects, other arthropods, and small fish in the wild. Axolotls locate food by smell, and will "snap" at any potential meal, sucking the food into their stomachs with vacuum force.</p>
+                <p> Unfortunately, axolotls have been driven to near extinction by the introduction of invasive species such as tilapia and carp; with a decreasing population of around 50 to 1,000 adult individuals, the species has been assessed as critically endangered by the International Union for Conservation of Nature!</p>
+                <p>Axolotls have four pigmentation genes; when mutated, they create different color variants. The four most common mutant colors are as follows:</p>
+                <ul>
+                    <li>Leucistic: pale pink body, black eyes</li>
+                    <li>Xanthic: grey body, black eyes</li>
+                    <li>Albinism: pale pink or white body, red eyes</li>
+                    <li>Melanism: black or dark blue body with no gold speckling or olive tone</li>
+                </ul>
+            </section>
+            <button id="creditzButton" onclick="showCreditz()">Credits / Settings</button>
+            <section id="creditz" class="hidden">
+                <div id="creditzContainer">
                     <hr>
-                    <li><a href="https://open.spotify.com/track/4WbiIxEEihkaklkcQdkQNW?si=1ee3c35847cf41e6">Aquarium's Afternoon - Heartbeat in The Brain</a></li>
-                    <li><a href="https://open.spotify.com/track/3uuxpMX3fAIGbA4i8gJr3L?si=96cf3b79745f4073">Distant Ocean - Alyzea</a></li>
-                    <li><a href="https://open.spotify.com/track/43uQq3GsdGzIrdnxX97upR?si=36db9e6eaabe4569">Last Day to Live - Dreamcorp.</a></li>
-                    <li><a href="https://open.spotify.com/track/4mZFxyHlldg9ApGAGObdUR?si=6ab9f9fcf30c4ab4">New Look - Secret Potion</a></li>
-                    <li><a href="https://open.spotify.com/track/0NPajRRbTvnXppqfEU8qaW?si=6d5a619dd49b4d4a">Overpopulation at The End of Everything is Less of a Worry, Haha - Dreamcorp.</a></li>
-                    <li><a href="https://open.spotify.com/track/3YoVchYjfP122w8IGJXJHg?si=297a4f6ca2b94a3d">Unseen - Squeak</a></li>
-                    <li><a href="https://open.spotify.com/track/1jNZj6WXVhiRsqLNqe43D8?si=e217f7bb1af747d0">Your Life Flashing Before Your Eyes - Dreamcorp.</a></li>
+                    <div id="creditzHeader">
+                        <h2>Credits</h2>
+                        <button id="hideCreditzButton" onclick="hideCreditz()">X</button>
+                    </div>
+                    <hr>
+                    <div id="creditzBody">
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/Axolotl">Wikipedia</a>
+                        </li>
+                        <li>
+                            <a href="https://www.conservation.org/learning/axolotl-facts">Fun Facts 1 & 2</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lovet.com/blog/five-axolotl-fun-facts-about-a-fascinating-aquatic-pet/">Fun Fact 3</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="https://axolotlplanet.com/collections/axolotls">Logo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.picmix.com/stamp/axolotl-2583636">Swimming Axolotl</a>
+                        </li>
+                        <li>
+                            <a href="https://www.petsupermarket.com/fish/live-fish/assorted-axolotl-regular/PSI00917.html?srsltid=AfmBOorZfaX6iSMbiAIyXP8k-2uWxYpmH58E8Q8pSW1M9-J5qdB7Vnoe">Left Image</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pnwbettas.com/blogs/care-guides/axolotl-care-guide">Right Image</a>
+                        </li>
+                        <li>
+                            <a href="https://www.shutterstock.com/image-vector/illustration-axolotl-limb-regeneration-infographic-2410703271?trackingId=a73107f9-95f3-442d-81c6-da9daf232250&listId=searchResults">Fun Fact Image 1</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/pin/389420699033404634/">Fun Fact Image 2</a>
+                        </li>
+                        <li>
+                            <a href="https://www.watercritters.ca/tag/socialization/">Fun Fact Image 3</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="https://codepen.io/monchito/pen/RPEqvo">Swimming Axolotl Logic (Unmodified)</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="https://open.spotify.com/track/4WbiIxEEihkaklkcQdkQNW?si=1ee3c35847cf41e6">Aquarium's Afternoon - Heartbeat in The Brain</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/3uuxpMX3fAIGbA4i8gJr3L?si=96cf3b79745f4073">Distant Ocean - Alyzea</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/43uQq3GsdGzIrdnxX97upR?si=36db9e6eaabe4569">Last Day to Live - Dreamcorp.</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/4mZFxyHlldg9ApGAGObdUR?si=6ab9f9fcf30c4ab4">New Look - Secret Potion</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/0NPajRRbTvnXppqfEU8qaW?si=6d5a619dd49b4d4a">Overpopulation at The End of Everything is Less of a Worry, Haha - Dreamcorp.</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/3YoVchYjfP122w8IGJXJHg?si=297a4f6ca2b94a3d">Unseen - Squeak</a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/track/1jNZj6WXVhiRsqLNqe43D8?si=e217f7bb1af747d0">Your Life Flashing Before Your Eyes - Dreamcorp.</a>
+                        </li>
+                    </div>
+                    <hr>
+                    <div id="volume-container">
+                        <h2>Music Volume</h2>
+                        <input
+                            type="range"
+                            id="volumeSlider"
+                            min="0"
+                            max="1"
+                            step="0.001"
+                            value="0.1"
+                            oninput="setVolume(this.value)"
+                        >
+                    </div>
+                    <hr>
                 </div>
-                
-                <hr>
-                
-                <div id="volume-container">
-                    <h2>Music Volume</h2>
-                    <input type="range" id="volumeSlider" min="0" max="1" step="0.001" value="0.1" oninput="setVolume(this.value)">
-                </div>
-                    
-                <hr>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <hr>
-
-        <p>2026 Mer and Axolotl. All rights reserved.</p>
-    </footer>
-    
-    <audio id="backgroundMusic1" class="backgroundMusic">
-        <source src="music/Aquarium's Afternoon.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic2" class="backgroundMusic">
-        <source src="music/Distant Ocean.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic3" class="backgroundMusic">
-        <source src="music/Last Day to Live.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic4" class="backgroundMusic">
-        <source src="music/New Look.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic5" class="backgroundMusic">
-        <source src="music/Overpopulation at The End of Everything is Less of a Worry, Haha.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic6" class="backgroundMusic">
-        <source src="music/Unseen.mp3" type="audio/mp3">
-    </audio>
-    <audio id="backgroundMusic7" class="backgroundMusic">
-        <source src="music/Your Life Flashing Before Your Eyes.mp3" type="audio/mp3">
-    </audio>
-
-    <script rel="javascript" src="script.js"></script>
-</body>
-
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <p>2026 Mer and Axolotl. All rights reserved.</p>
+        </footer>
+        <audio id="backgroundMusic1" class="backgroundMusic">
+            <source src="music/Aquarium's Afternoon.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic2" class="backgroundMusic">
+            <source src="music/Distant Ocean.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic3" class="backgroundMusic">
+            <source src="music/Last Day to Live.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic4" class="backgroundMusic">
+            <source src="music/New Look.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic5" class="backgroundMusic">
+            <source src="music/Overpopulation at The End of Everything is Less of a Worry, Haha.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic6" class="backgroundMusic">
+            <source src="music/Unseen.mp3" type="audio/mp3">
+        </audio>
+        <audio id="backgroundMusic7" class="backgroundMusic">
+            <source src="music/Your Life Flashing Before Your Eyes.mp3" type="audio/mp3">
+        </audio>
+        <script rel="javascript" src="script.js"></script>
+    </body>
 </html>
